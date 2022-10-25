@@ -1,0 +1,146 @@
+header {
+position: absolute;
+width: 1440px;
+height: 100px;
+left: 0px;
+top: 0px;
+background: #FFFFFF;
+box-shadow: 0px 0.5px 0px #DDDFE6;
+}
+
+#hello {
+position: absolute;
+width: 39px;
+height: 24px;
+left: 536px;
+top: 38px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: right;
+color: #1A2236;
+}
+
+#portfolio {
+position: absolute;
+width: 66px;
+height: 24px;
+left: 625px;
+top: 38px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+text-align: right;
+color: #1A2236;
+}
+
+#about {
+    position: absolute;
+    width: 48px;
+    height: 24px;
+    left: 741px;
+    top: 38px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    
+    text-align: right;
+    color: #1A2236;    
+}
+
+#contact {
+    position: absolute;
+    width: 66px;
+    height: 24px;
+    left: 839px;
+    top: 38px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: right; 
+    color: #1A2236;   
+}
+
+headline {
+position: absolute;
+width: 484px;
+height: 220px;
+left: 160px;
+top: 292px;
+
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 400;
+font-size: 110px;
+line-height: 100%;
+
+color: #1A2236;
+}
+
+#introduction {
+position: absolute;
+width: 484px;
+height: 84px;
+left: 10px;
+top: 230px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: -0.01em;
+
+color: #1A2236;
+}
+
+#header-img1{
+position: absolute;
+left: 51.25%;
+right: -48.68%;
+top: 100%;
+bottom: 79.86%;
+}
+
+#header-img2{
+position: absolute;
+width: 175px;
+height: 175px;
+left: 563px;
+top: 802px;
+}
+
+#collaboration {
+box-sizing: border-box;   
+background: #1A2236;
+padding-top: 0.3cm;
+padding-bottom: 1cm;
+position: absolute;
+width: 203.68px;
+height: 26.47px;
+left: 100.16px;
+top: 350.76px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+
+text-align: center;
+color: #ffffff;
+}
