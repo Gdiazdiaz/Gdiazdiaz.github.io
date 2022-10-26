@@ -20,6 +20,11 @@
 - GitHub: [@Gdiazdiaz](https://github.com/Gdiazdiaz)
 - LinkedIn: [Glenda Diaz](www.linkedin.com/in/glendadiazz)
 
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Gdiazdiaz/My-portafolio/issues).
 
 ## Show your support
 
