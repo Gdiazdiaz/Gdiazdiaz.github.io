@@ -15,7 +15,7 @@
 
 ## Authors
 
-👤 **Author**
+👤 **Glenda Diaz**
 
 - GitHub: [@Gdiazdiaz](https://github.com/Gdiazdiaz)
 - LinkedIn: [Glenda Diaz](www.linkedin.com/in/glendadiazz)
