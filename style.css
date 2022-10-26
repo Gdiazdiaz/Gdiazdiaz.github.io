@@ -1,0 +1,69 @@
+#menu {
+  position: absolute;
+  width: 20px;
+  height: 14px;
+  left: 284px;
+  top: 19px;
+}
+
+.headline {
+  position: absolute;
+  width: 220px;
+  height: 100px;
+  left: 16px;
+  top: 104px;
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+#introduction {
+  position: absolute;
+  width: 288px;
+  height: 126px;
+  left: 1px;
+  top: 110px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+}
+
+#header-img1 {
+  position: absolute;
+  width: 111px;
+  height: 74px;
+  left: 0;
+  top: 0;
+}
+
+#header-img2 {
+  position: absolute;
+  width: 320px;
+  height: 160px;
+  left: 0;
+  top: 472px;
+}
+
+#collaboration {
+  box-sizing: border-box;
+  background: #1a2236;
+  position: absolute;
+  width: 203.68px;
+  height: 45px;
+  left: 58px;
+  top: 290px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 41px;
+  text-align: center;
+  color: #fff;
+}
