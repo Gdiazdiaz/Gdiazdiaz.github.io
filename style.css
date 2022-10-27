@@ -103,6 +103,7 @@
   color: #fff;
   margin-top: 0.4cm;
   margin-left: 0.5cm;
+  margin-bottom: 0cm;
 }
 
 ul {
@@ -143,9 +144,11 @@ ul {
   line-height: 24px;
   color: #fff;
   margin-left: 0.5cm;
-  padding-top: 0.2cm;
+  padding-top: 0.25cm;
   padding-left: 0.2cm;
+  padding-bottom: 0.2cm;
   margin-bottom: 0.5cm;
+  text-decoration: none;
 }
 
 #arrow {
@@ -160,9 +163,7 @@ ul {
 }
 
 #abt-t {
-  margin-top: 0.5cm;
   background-color: #fff;
-  padding-top: 1.5cm;
   padding-left: 0.25cm;
   font-family: 'Playfair Display', sans-serif;
   font-style: normal;
@@ -174,7 +175,6 @@ ul {
 #abt {
   background-color: #fff;
   width: 311px;
-  margin-top: 1cm;
   margin-left: 0.25cm;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -184,6 +184,14 @@ ul {
   color: #1a2236;
 }
 
+p {
+  margin-top: 1cm;
+  margin-bottom: 0.25cm;
+}
+
+#text {
+  margin-top: 0cm;
+}
 #cv {
   background-color: #1a2236;
   margin-left: 0.25cm;
@@ -198,6 +206,7 @@ ul {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
+  text-decoration: none;
   line-height: 24px;
   color: #fff;
 }
