@@ -103,7 +103,7 @@
   color: #fff;
   margin-top: 0.4cm;
   margin-left: 0.5cm;
-  margin-bottom: 0cm;
+  margin-bottom: 0;
 }
 
 ul {
@@ -190,8 +190,9 @@ p {
 }
 
 #text {
-  margin-top: 0cm;
+  margin-top: 0;
 }
+
 #cv {
   background-color: #1a2236;
   margin-left: 0.25cm;
