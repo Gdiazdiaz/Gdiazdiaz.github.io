@@ -48,7 +48,7 @@
   width: 320px;
   height: 160px;
   left: 0;
-  top: 472px;
+  top: 500px;
 }
 
 #collaboration {
@@ -66,4 +66,238 @@
   line-height: 41px;
   text-align: center;
   color: #fff;
+}
+
+.h2 {
+  position: absolute;
+  width: 181px;
+  height: 50px;
+  left: 16px;
+  top: 670px;
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+.grid-container {
+  background-color: #1a2236;
+  display: grid;
+  position: absolute;
+  top: 21cm;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#st {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 150;
+  font-size: 20px;
+  line-height: 80%;
+  color: #fff;
+  margin-top: 0.4cm;
+  margin-left: 0.5cm;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0.5cm;
+}
+
+#l1 {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  margin-right: 1cm;
+  margin-left: 0%;
+}
+
+#lang {
+  background-color: aquamarine;
+  width: fit-content;
+  height: 18px;
+  text-align: center;
+  padding-top: 0.2cm;
+  padding-left: 0.2cm;
+  padding-right: 0.2cm;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12.3334px;
+  line-height: 80%;
+  color: #1a2236;
+}
+
+#stp {
+  width: 170px;
+  height: 28px;
+  border: solid rgb(255, 255, 255) 2px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-left: 0.5cm;
+  padding-top: 0.25cm;
+  padding-left: 0.2cm;
+  padding-bottom: 0.2cm;
+  margin-bottom: 0.5cm;
+  text-decoration: none;
+}
+
+#arrow {
+  position: absolute;
+  margin-left: 0.3cm;
+}
+
+.flex-container2 {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+#abt-t {
+  background-color: #fff;
+  padding-left: 0.25cm;
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  color: #1a2236;
+}
+
+#abt {
+  background-color: #fff;
+  width: 311px;
+  margin-left: 0.25cm;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1a2236;
+}
+
+p {
+  margin-top: 1cm;
+  margin-bottom: 0.25cm;
+}
+
+#text {
+  margin-top: 0;
+}
+
+#cv {
+  background-color: #1a2236;
+  margin-left: 0.25cm;
+  margin-top: 1cm;
+  margin-bottom: 1cm;
+  width: 145px;
+  padding-top: 0.3cm;
+  padding-bottom: 0.3cm;
+  padding-left: 2cm;
+  padding-right: 2cm;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 24px;
+  color: #fff;
+}
+
+#download {
+  position: absolute;
+  margin-left: 0.5cm;
+}
+
+#languages {
+  background-color: #1c528a;
+  width: 240px;
+  margin-left: 0.25cm;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 1.5cm;
+  padding-top: 1cm;
+  padding-bottom: 1.5cm;
+  margin-bottom: 0.5cm;
+  color: #fff;
+}
+
+#blue {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 60;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+  text-align: left;
+}
+
+#frameworks {
+  background-color: #e2505c;
+  width: 240px;
+  margin-left: 0.25cm;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 1.5cm;
+  padding-top: 1cm;
+  padding-bottom: 1.2cm;
+  margin-bottom: 0.5cm;
+  color: #fff;
+}
+
+#skills {
+  background-color: #febf52;
+  width: 240px;
+  margin-left: 0.25cm;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 1.5cm;
+  padding-top: 1cm;
+  padding-bottom: 1.2cm;
+  margin-bottom: 0.5cm;
+  color: #fff;
+}
+
+#hashtag {
+  position: absolute;
+  right: 0.4cm;
+  top: 69.4cm;
+}
+
+#square {
+  position: absolute;
+  right: 0.4cm;
+  top: 77.5cm;
+}
+
+#lightbulb {
+  position: absolute;
+  right: 0.4cm;
+  top: 85.29cm;
+}
+
+#cv:hover {
+  background-color: #9b50e2;
+}
+
+#stp:hover {
+  background-color: #9b50e2;
+  border: solid rgb(67, 12, 119) 2px;
 }
