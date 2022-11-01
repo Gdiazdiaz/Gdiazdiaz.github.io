@@ -183,12 +183,25 @@
                 <h1 class="contact-intro-header">Get started</h1>
             <p class="contact-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna.</p>
-            <form action="" class="contact-form">
-                <input type="text" placeholder="Your name" class="contact-form-name"/>
-                <input type="email" placeholder="Your email" class="contact-form-email"/>
-                <textarea name="content" id="content" cols="30" rows="10" class="contact-form-content" placeholder="Enter your message here..."></textarea>
+            <form action="https://formspree.io/f/mdojwqzo" method="POST" class="contact-form">
+                <input type="text" placeholder="Your name" class="contact-form-name" max="30" name="name" required/>
+                <input type="email" placeholder="Your email" class="contact-form-email" required/>
+                <textarea name="content" id="content" cols="30" rows="10" class="contact-form-content" placeholder="Enter your message here..." maxlength="500" required></textarea>
                 <input type="submit" class="contact-form-submit" value="Start collaboration"/>
             </form>
+            </div>
+            <div class="socials">
+                <a href="" class="resume">Get my resume
+                    <img id="arrow2" src="media/arrow2.png">
+                </a>
+                <ul class="social-flex-container">
+                    <li><img class="social-icon" src="media/ic_stackoverflow.png"></li>
+                    <li><img class="social-icon" src="media/ic_github.png"></li>
+                    <li><img class="social-icon" src="media/ic_twitter.png"></li>
+                    <li><img class="social-icon" src="media/ic_linkedin.png"></li>
+                    <li><img class="social-icon" src="media/ic_medium.png"></li>
+                    <li><img class="social-icon" src="media/ic_angellist.png"></li>
+                </ul>
             </div>       
         </section>
     </section>
