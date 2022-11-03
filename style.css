@@ -211,6 +211,7 @@ ul {
   background-color: #fff;
   width: 311px;
   margin-left: 0.25cm;
+  margin-bottom: 0.8cm;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -232,7 +233,6 @@ p {
   background-color: #1a2236;
   margin-left: 0.25cm;
   margin-top: 1cm;
-  margin-bottom: 1cm;
   width: 145px;
   padding-top: 0.3cm;
   padding-bottom: 0.3cm;
@@ -256,6 +256,7 @@ p {
   background-color: #1c528a;
   width: 240px;
   margin-left: 0.25cm;
+  margin-top: 1cm;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -313,19 +314,19 @@ p {
 #hashtag {
   position: absolute;
   right: 0.4cm;
-  top: 69.4cm;
+  top: 68.4cm;
 }
 
 #square {
   position: absolute;
   right: 0.4cm;
-  top: 77.5cm;
+  top: 76.5cm;
 }
 
 #lightbulb {
   position: absolute;
   right: 0.4cm;
-  top: 85.29cm;
+  top: 84.29cm;
 }
 
 #cv:hover {
@@ -340,7 +341,7 @@ p {
 .contact-container {
   width: 320px;
   height: 813px;
-  background: #f9f9fa;
+  background-color: white;
 }
 
 .contact-container-body {
@@ -522,6 +523,18 @@ p {
   display: none;
 }
 
+.contact-img2 {
+  display: none;
+}
+
+.contact-img3 {
+  display: none;
+}
+
+.skill-img {
+  display: none;
+}
+
 @media (min-width: 768px) {
   #header-img1 {
     display: none;
@@ -662,10 +675,91 @@ position: absolute;
 
   .flex-container2 {
     flex-direction:row-reverse;
+    margin-top: 4cm;
+
   }
 
   .contact-container {
+    margin-top: 3cm;
+    width: 100%;
+  }
+
+  .contact-intro-header{
+    width: 15cm;
+    font-weight: 400;
+font-size: 110px;
+line-height: 100%;
+  }
+
+  .contact-paragraph {
+    width: 14cm;
+    margin-top: 2cm;
+  }
+
+  .contact-form {
+    margin-left: 0cm;
+    padding-left: 0cm;
+    position: absolute;
+    left: 9.4cm;
+    bottom: 4.5cm;
+  }
+
+  .contact-form-name {
+    width: 14.5cm;
+  }
+
+  .contact-form-email {
+    width: 14.5cm;
+  }
+
+  .contact-form-submit {
+    width: 5cm;
+    margin-left: 5cm;
+    margin-top: 1cm;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-end;
+    margin-top: 11cm;
+    width: 35cm;
+  }
+
+  .resume {
+    margin-top: 0.5cm;
+    margin-left: 2.5cm;
+  }
+
+ .social-flex-container {
+  margin-top: 0cm;
+  justify-content: space-between;
+  width: 7cm;
+  margin-right: 2cm;
+  margin-top: 0.5cm;
+ }
+
+  .contact-form-content {
+    width: 14.5cm;
+  }
+
+  .contact-img {
     display: none;
+  }
+
+  .contact-img2 {
+    display: block;
+    position: absolute;
+    width: 263.06px;
+height: 350.84px;
+  }
+
+  .contact-img3 {
+    display:block;
+    position: absolute;
+    bottom: 1.8cm;
+    right: 0cm;
   }
 
   .flex-containerz {
@@ -758,6 +852,53 @@ top: 21cm;
 left: 18.3cm;
   }
 
+  #mini-grid-container {
+    display: grid;
+    grid-template-areas: 'auto auto';
+    margin-right: 2cm;
+  }
 
+  .mini-flex-container {
+    display: flex;
+    flex-direction: column;
+  }
 
+  #languages {
+    margin-top: 0cm;
+  }
+
+  #abt-t {
+    font-weight: 400;
+font-size: 110px;
+line-height: 100%;
+margin-bottom: 0.6cm;
+  }
+
+  #abt {
+    margin-bottom: 0cm;
+  }
+
+  #hashtag {
+    position: absolute;
+    top: 37.1cm;
+    margin-right: 18.2cm;
+  }
+
+  #square {
+    position: absolute;
+    top: 37.27cm;
+    right: 10.5cm;
+  }
+
+  #lightbulb {
+    position: absolute;
+    top: 45.05cm;
+    right: 18.6cm;
+  }
+
+  .skill-img {
+    display: block;
+    margin-top: 1.5cm;
+    margin-left: 2.2cm;
+  }
 }
