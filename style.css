@@ -13,8 +13,8 @@
 
 .headline {
   width: 220px;
-height: 100px;
-  margin-bottom: 0cm;
+  height: 100px;
+  margin-bottom: 0;
   font-family: 'Playfair Display', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -25,8 +25,8 @@ height: 100px;
 
 #introduction {
   width: 288px;
-height: 126px;
-margin-bottom: 0.8cm;
+  height: 126px;
+  margin-bottom: 0.8cm;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -550,12 +550,12 @@ p {
     list-style: none;
     margin-left: 30%;
     margin-right: 30%;
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-color: #1A2236;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1a2236;
   }
 
   #menu {
@@ -564,22 +564,22 @@ color: #1A2236;
 
   .headline {
     width: 484px;
-font-weight: 400;
-font-size: 110px;
-line-height: 100%;
-margin-left: 4cm;
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 100%;
+    margin-left: 4cm;
   }
 
   #introduction {
     width: 484px;
     margin-left: 4cm;
     margin-top: 4cm;
-    margin-bottom: 0cm;
+    margin-bottom: 0;
   }
 
   #collaboration {
     margin-left: 4cm;
-    margin-top: 0cm;
+    margin-top: 0;
   }
 
   #header-img-desktop {
@@ -593,16 +593,16 @@ margin-left: 4cm;
   #dots {
     display: block;
     width: 175px;
-height: 175px;
-margin-left: 13.7cm;
+    height: 175px;
+    margin-left: 13.7cm;
   }
 
   .h2 {
     transform: rotate(-90deg);
     font-weight: 400;
-font-size: 110px;
-line-height: 100%;
-margin-top: 12cm;
+    font-size: 110px;
+    line-height: 100%;
+    margin-top: 12cm;
   }
 
   .grid-container {
@@ -613,10 +613,10 @@ margin-top: 12cm;
 
   #stz {
     font-weight: 700;
-font-size: 60px;
-line-height: 80%;
-margin-top: 1.5cm;
-margin-left: 1.5cm;
+    font-size: 60px;
+    line-height: 80%;
+    margin-top: 1.5cm;
+    margin-left: 1.5cm;
   }
 
   #st {
@@ -624,7 +624,6 @@ margin-left: 1.5cm;
   }
 
   #l1z {
-    justify-content: flex-start;
     margin-top: 1cm;
     justify-content: space-between;
     margin-right: 12cm;
@@ -642,7 +641,7 @@ margin-left: 1.5cm;
     margin-left: 1.5cm;
     border-color: #1a2236;
     background-color: white;
-    color: #1A2236;
+    color: #1a2236;
     font-weight: 400;
     font-size: 20px;
     line-height: 27px;
@@ -667,16 +666,15 @@ margin-left: 1.5cm;
   #dots2 {
     display: block;
     width: 160px;
-height: 160px;
-margin-top: 4.6cm;
-margin-left: 8.2cm;
-position: absolute;
+    height: 160px;
+    margin-top: 4.6cm;
+    margin-left: 8.2cm;
+    position: absolute;
   }
 
   .flex-container2 {
-    flex-direction:row-reverse;
+    flex-direction: row-reverse;
     margin-top: 4cm;
-
   }
 
   .contact-container {
@@ -684,11 +682,11 @@ position: absolute;
     width: 100%;
   }
 
-  .contact-intro-header{
+  .contact-intro-header {
     width: 15cm;
     font-weight: 400;
-font-size: 110px;
-line-height: 100%;
+    font-size: 110px;
+    line-height: 100%;
   }
 
   .contact-paragraph {
@@ -697,8 +695,8 @@ line-height: 100%;
   }
 
   .contact-form {
-    margin-left: 0cm;
-    padding-left: 0cm;
+    margin-left: 0;
+    padding-left: 0;
     position: absolute;
     left: 9.4cm;
     bottom: 4.5cm;
@@ -732,13 +730,12 @@ line-height: 100%;
     margin-left: 2.5cm;
   }
 
- .social-flex-container {
-  margin-top: 0cm;
-  justify-content: space-between;
-  width: 7cm;
-  margin-right: 2cm;
-  margin-top: 0.5cm;
- }
+  .social-flex-container {
+    justify-content: space-between;
+    width: 7cm;
+    margin-right: 2cm;
+    margin-top: 0.5cm;
+  }
 
   .contact-form-content {
     width: 14.5cm;
@@ -752,14 +749,14 @@ line-height: 100%;
     display: block;
     position: absolute;
     width: 263.06px;
-height: 350.84px;
+    height: 350.84px;
   }
 
   .contact-img3 {
-    display:block;
+    display: block;
     position: absolute;
     bottom: 1.8cm;
-    right: 0cm;
+    right: 0;
   }
 
   .flex-containerz {
@@ -769,7 +766,7 @@ height: 350.84px;
     margin-top: 4.5cm;
     margin-left: 12.5cm;
     background-image: url(media/desktop1.png);
-height: 515px;
+    height: 515px;
   }
 
   .backblue {
@@ -780,6 +777,7 @@ height: 515px;
     width: 860px;
     height: 325px;
   }
+
   #rectangle1 {
     display: none;
   }
@@ -787,18 +785,18 @@ height: 515px;
   #rectangle2 {
     margin-top: 1.5cm;
     width: 465px;
-height: 270px;
+    height: 270px;
   }
 
   #rectangle3 {
     width: 780px;
-height: 465px;
+    height: 465px;
   }
 
   #rectangle4 {
     margin-left: 20.5cm;
     width: 465px;
-height: 270px;
+    height: 270px;
   }
 
   #rectangle5 {
@@ -806,15 +804,15 @@ height: 270px;
     top: 7cm;
     left: 25cm;
     width: 400px;
-height: 270px;
+    height: 270px;
   }
 
   #rectangle6 {
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 25cm;
     width: 400px;
-height: 270px;
+    height: 270px;
   }
 
   #pr-img1 {
@@ -822,34 +820,34 @@ height: 270px;
     position: absolute;
     width: 480px;
     height: 332px;
-    top: 0cm;
+    top: 0;
     left: 12.3cm;
   }
-  
+
   #pr-img2 {
     display: block;
     width: 350px;
-height: 200px;
-position: absolute;
-top: 21cm;
+    height: 200px;
+    position: absolute;
+    top: 21cm;
   }
-  
+
   #pr-img3 {
     display: block;
     width: 565px;
-height: 270px;
-position: absolute;
-top: 14.1cm;
-left: 20.6cm;
+    height: 270px;
+    position: absolute;
+    top: 14.1cm;
+    left: 20.6cm;
   }
-  
+
   #pr-img4 {
     display: block;
     width: 87.69px;
-height: 87.71px;
-position: absolute;
-top: 21cm;
-left: 18.3cm;
+    height: 87.71px;
+    position: absolute;
+    top: 21cm;
+    left: 18.3cm;
   }
 
   #mini-grid-container {
@@ -864,18 +862,18 @@ left: 18.3cm;
   }
 
   #languages {
-    margin-top: 0cm;
+    margin-top: 0;
   }
 
   #abt-t {
     font-weight: 400;
-font-size: 110px;
-line-height: 100%;
-margin-bottom: 0.6cm;
+    font-size: 110px;
+    line-height: 100%;
+    margin-bottom: 0.6cm;
   }
 
   #abt {
-    margin-bottom: 0cm;
+    margin-bottom: 0;
   }
 
   #hashtag {
