@@ -9,9 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <header>
+        <ul class="nav-menu">
+            <li>Hello</li>
+            <li>Portfolio</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
         <div>
             <img id="header-img1" src="media/image_geometry_1.png">
-            <img id="header-img2" src="media/image_geometry_2.png">
         </div>
         <nav>
             <a>
@@ -19,8 +24,8 @@
             </a>
         </nav>
     </header>
-    <h1 class="headline">
-        Glenda Diaz
+    <div class="headline-flex-container">
+        <h1 class="headline">Glenda Diaz</h1>
         <p id="introduction">
             Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my
             works.
@@ -29,16 +34,31 @@
         <a id="collaboration">
             Start collaboration
         </a>
-    </h1>
+        <img id="header-img2" src="media/image_geometry_2.png">
+        <img id="header-img-desktop" src="media/collage.png">
+        <img id="dots" src="media/dots.png">
+    </div>
 </head>
 
 <body>
     <h2 class="h2">
         Projects
     </h2>
+    <img id="dots2" src="media/dots.png">
+    <div class="flex-containerz">
+        <div class="backblue">
+        <h3 id="stz">Project name goes here</h3>
+        <ul id="l1z">
+            <li id="lang">HTML</li>
+            <li id="lang">CSS</li>
+            <li id="lang">JavaScript</li>
+        </ul>
+        <a id="stpz">See this project <img id="arrow" src="media/Union.png"></a>
+        </div>
+    </div>
     <section class="grid-container">
         <div class="flex-container">
-            <div><img id="ractangle1" src="media/Rectangle 1.png"></div>
+            <div><img id="rectangle1" src="media/Rectangle 1.png"></div>
             <div>
                 <h3 id="st">Project name goes here</h3>
             </div>
@@ -54,7 +74,7 @@
             </a>
         </div>
         <div class="flex-container">
-            <div><img id="ractangle1" src="media/Rectangle 2.png"></div>
+            <div><img id="rectangle2" src="media/Rectangle 2.png"></div>
             <div>
                 <h3 id="st">Project name goes here</h3>
             </div>
@@ -70,7 +90,7 @@
             </a>
         </div>
         <div class="flex-container">
-            <div><img id="ractangle1" src="media/Rectangle 3.png"></div>
+            <div><img id="rectangle3" src="media/Rectangle 3.png"></div>
             <div>
                 <h3 id="st">Project name goes here</h3>
             </div>
@@ -86,7 +106,7 @@
             </a>
         </div>
         <div class="flex-container">
-            <div><img id="ractangle1" src="media/Rectangle 4.png"></div>
+            <div><img id="rectangle4" src="media/Rectangle 4.png"></div>
             <div>
                 <h3 id="st">Project name goes here</h3>
             </div>
@@ -102,7 +122,7 @@
             </a>
         </div>
         <div class="flex-container">
-            <div><img id="ractangle1" src="media/Rectangle 1.png"></div>
+            <div><img id="rectangle5" src="media/Rectangle 5.png"></div>
             <h3 id="st">Project name goes here</h3>
             <div>
                 <ul id="l1">
@@ -116,7 +136,7 @@
             </a>
         </div>
         <div class="flex-container">
-            <div><img id="ractangle1" src="media/Rectangle 1.png"></div>
+            <div><img id="rectangle6" src="media/Rectangle 6.png"></div>
             <div>
                 <h3 class="h6-like" id="st">Project name goes here</h3>
             </div>
@@ -130,9 +150,14 @@
             <a href="" id="stp">See this project
                 <img id="arrow" src="media/arrow.png">
             </a>
+            <img id="pr-img1" src="media/pr-img1.png">
+            <img id="pr-img2" src="media/pr-img2.png">
+            <img id="pr-img3" src="media/pr-img3.png">
+            <img id="pr-img4" src="media/pr-img4.png">
         </div>
 
         <section class="flex-container2">
+            <div class="mini-flex-container">
             <div id="abt-t">
                 <p>About</p>
             </div>
@@ -144,6 +169,8 @@
             <a href="" id="cv">Get my CV
                 <img id="download" src="media/download.png">
             </a>
+            </div>
+            <div id="mini-grid-container">
             <div id="languages">
                 Languages
                 <ul id="blue">
@@ -155,7 +182,7 @@
                 <img id="hashtag" src="media/hashtag.png">
             </div>
             <div id="frameworks">
-                Languages
+            Frameworks
                 <ul id="blue">
                     <li>Bootstrap</li>
                     <li>Ruby on rails</li>
@@ -166,7 +193,7 @@
                 <img id="square" src="media/square.png">
             </div>
             <div id="skills">
-                Languages
+                skills
                 <ul id="blue">
                     <li>Bootstrap</li>
                     <li>Ruby on rails</li>
@@ -176,9 +203,12 @@
                 </ul>
                 <img id="lightbulb" src="media/skills.png">
             </div>
+            <img src="media/image_dots_with_teal.png" class="skill-img">
+            </div>
         </section>
         <section class="contact-container">
-            <img src="media/image_geometry_3-1.svg" alt="" class="contact-img">
+            <img src="media/image_geometry_3-1.svg" class="contact-img">
+            <img src="media/image-geometry_6.png" class="contact-img2">
             <div class="contact-container-body">
                 <h1 class="contact-intro-header">Get started</h1>
             <p class="contact-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -190,6 +220,7 @@
                 <input type="submit" class="contact-form-submit" value="Start collaboration"/>
             </form>
             </div>
+            <img src="media/image-geometry_7.png" class="contact-img3">
             <div class="socials">
                 <a href="" class="resume">Get my resume
                     <img id="arrow2" src="media/arrow2.png">
