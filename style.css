@@ -62,6 +62,7 @@
   line-height: 41px;
   text-align: center;
   color: #fff;
+  transition: background-color 1s, ease-in-out;
 }
 
 #collaboration:hover {
@@ -249,6 +250,7 @@ p {
   text-decoration: none;
   line-height: 24px;
   color: #fff;
+  transition: background-color 1s, ease-in-out;
 }
 
 #download {
@@ -445,6 +447,7 @@ p {
   line-height: 24px;
   text-align: center;
   margin-top: 10px;
+  transition: background-color 1s, ease-in-out;
 }
 
 .socials {
@@ -658,6 +661,7 @@ p {
     font-weight: 400;
     font-size: 20px;
     line-height: 27px;
+    transition: background-color 1s, ease-in-out;
   }
 
   #stpz:hover {
