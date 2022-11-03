@@ -6,12 +6,15 @@
   top: 19px;
 }
 
+.headline-flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .headline {
-  position: absolute;
   width: 220px;
-  height: 100px;
-  left: 16px;
-  top: 104px;
+height: 100px;
+  margin-bottom: 0cm;
   font-family: 'Playfair Display', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -21,11 +24,9 @@
 }
 
 #introduction {
-  position: absolute;
   width: 288px;
-  height: 126px;
-  left: 1px;
-  top: 110px;
+height: 126px;
+margin-bottom: 0.8cm;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -36,7 +37,6 @@
 }
 
 #header-img1 {
-  position: absolute;
   width: 111px;
   height: 74px;
   left: 0;
@@ -44,21 +44,17 @@
 }
 
 #header-img2 {
-  position: absolute;
   width: 320px;
   height: 160px;
-  left: 0;
-  top: 500px;
 }
 
 #collaboration {
   box-sizing: border-box;
   background: #1a2236;
-  position: absolute;
   width: 203.68px;
   height: 45px;
-  left: 58px;
-  top: 290px;
+  margin-left: 1cm;
+  margin-bottom: 1cm;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -72,8 +68,6 @@
   position: absolute;
   width: 181px;
   height: 50px;
-  left: 16px;
-  top: 670px;
   font-family: 'Playfair Display', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -94,7 +88,23 @@
   flex-direction: column;
 }
 
+.flex-containerz {
+  display: none;
+}
+
 #st {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 150;
+  font-size: 20px;
+  line-height: 80%;
+  color: #fff;
+  margin-top: 0.4cm;
+  margin-left: 0.5cm;
+  margin-bottom: 0;
+}
+
+#stz {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 150;
@@ -118,9 +128,17 @@ ul {
   margin-left: 0%;
 }
 
+#l1z {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  margin-right: 1cm;
+  margin-left: 0%;
+}
+
 #lang {
   background-color: aquamarine;
-  width: fit-content;
+  width: 65px;
   height: 18px;
   text-align: center;
   padding-top: 0.2cm;
@@ -135,6 +153,23 @@ ul {
 }
 
 #stp {
+  width: 170px;
+  height: 28px;
+  border: solid rgb(255, 255, 255) 2px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-left: 0.5cm;
+  padding-top: 0.25cm;
+  padding-left: 0.2cm;
+  padding-bottom: 0.2cm;
+  margin-bottom: 0.5cm;
+  text-decoration: none;
+}
+
+#stpz {
   width: 170px;
   height: 28px;
   border: solid rgb(255, 255, 255) 2px;
@@ -449,4 +484,280 @@ p {
 
 .contact-form-submit:hover {
   background-color: #9b50e2;
+}
+
+.nav-menu {
+  display: none;
+}
+
+#header-img-desktop {
+  display: none;
+}
+
+#dots {
+  display: none;
+}
+
+#dots2 {
+  display: none;
+}
+
+#desktopimg {
+  display: none;
+}
+
+#pr-img1 {
+  display: none;
+}
+
+#pr-img2 {
+  display: none;
+}
+
+#pr-img3 {
+  display: none;
+}
+
+#pr-img4 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #header-img1 {
+    display: none;
+  }
+
+  #header-img2 {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #1A2236;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .headline {
+    width: 484px;
+font-weight: 400;
+font-size: 110px;
+line-height: 100%;
+margin-left: 4cm;
+  }
+
+  #introduction {
+    width: 484px;
+    margin-left: 4cm;
+    margin-top: 4cm;
+    margin-bottom: 0cm;
+  }
+
+  #collaboration {
+    margin-left: 4cm;
+    margin-top: 0cm;
+  }
+
+  #header-img-desktop {
+    position: absolute;
+    display: block;
+    width: 640px;
+    height: 18.8cm;
+    margin-left: 18.4cm;
+  }
+
+  #dots {
+    display: block;
+    width: 175px;
+height: 175px;
+margin-left: 13.7cm;
+  }
+
+  .h2 {
+    transform: rotate(-90deg);
+    font-weight: 400;
+font-size: 110px;
+line-height: 100%;
+margin-top: 12cm;
+  }
+
+  .grid-container {
+    margin-top: 17.3cm;
+    display: grid;
+    background-color: white;
+  }
+
+  #stz {
+    font-weight: 700;
+font-size: 60px;
+line-height: 80%;
+margin-top: 1.5cm;
+margin-left: 1.5cm;
+  }
+
+  #st {
+    display: none;
+  }
+
+  #l1z {
+    justify-content: flex-start;
+    margin-top: 1cm;
+    justify-content: space-between;
+    margin-right: 12cm;
+    margin-bottom: 1.5cm;
+    margin-left: 1.1cm;
+  }
+
+  #l1 {
+    display: none;
+  }
+
+  #stpz {
+    padding-right: 1.3cm;
+    margin-bottom: 1cm;
+    margin-left: 1.5cm;
+    border-color: #1a2236;
+    background-color: white;
+    color: #1A2236;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  #stp {
+    display: none;
+  }
+
+  #arrow {
+    margin-top: 0.1cm;
+  }
+
+  #desktopimg {
+    display: block;
+    margin-left: 12.5cm;
+    width: 850px;
+    height: 450px;
+    margin-top: 4.6cm;
+  }
+
+  #dots2 {
+    display: block;
+    width: 160px;
+height: 160px;
+margin-top: 4.6cm;
+margin-left: 8.2cm;
+position: absolute;
+  }
+
+  .flex-container2 {
+    flex-direction:row-reverse;
+  }
+
+  .contact-container {
+    display: none;
+  }
+
+  .flex-containerz {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    margin-top: 4.5cm;
+    margin-left: 12.5cm;
+    background-image: url(media/desktop1.png);
+height: 515px;
+  }
+
+  .backblue {
+    position: absolute;
+    margin-top: 5cm;
+    background-color: #1a2236;
+    opacity: 0.97;
+    width: 860px;
+    height: 325px;
+  }
+  #rectangle1 {
+    display: none;
+  }
+
+  #rectangle2 {
+    margin-top: 1.5cm;
+    width: 465px;
+height: 270px;
+  }
+
+  #rectangle3 {
+    width: 780px;
+height: 465px;
+  }
+
+  #rectangle4 {
+    margin-left: 20.5cm;
+    width: 465px;
+height: 270px;
+  }
+
+  #rectangle5 {
+    position: absolute;
+    top: 7cm;
+    left: 25cm;
+    width: 400px;
+height: 270px;
+  }
+
+  #rectangle6 {
+    position: absolute;
+    top: 0px;
+    left: 25cm;
+    width: 400px;
+height: 270px;
+  }
+
+  #pr-img1 {
+    display: block;
+    position: absolute;
+    width: 480px;
+    height: 332px;
+    top: 0cm;
+    left: 12.3cm;
+  }
+  
+  #pr-img2 {
+    display: block;
+    width: 350px;
+height: 200px;
+position: absolute;
+top: 21cm;
+  }
+  
+  #pr-img3 {
+    display: block;
+    width: 565px;
+height: 270px;
+position: absolute;
+top: 14.1cm;
+left: 20.6cm;
+  }
+  
+  #pr-img4 {
+    display: block;
+    width: 87.69px;
+height: 87.71px;
+position: absolute;
+top: 21cm;
+left: 18.3cm;
+  }
+
+
+
 }
