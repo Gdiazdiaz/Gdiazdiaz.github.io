@@ -606,13 +606,11 @@ p {
   @keyframes slidein {
     from {
       width: 0%;
-
     }
 
     to {
       width: 640px;
     }
-    
   }
 
   #dots {
@@ -632,7 +630,7 @@ p {
   }
 
   .h2:hover {
-    rotate:90deg;
+    rotate: 90deg;
   }
 
   .grid-container {
@@ -890,7 +888,7 @@ p {
 
   @keyframes rotate {
     from {
-      rotate:0deg;
+      rotate: 0deg;
     }
 
     to {
