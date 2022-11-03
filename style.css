@@ -62,6 +62,11 @@
   line-height: 41px;
   text-align: center;
   color: #fff;
+  text-decoration: none;
+}
+
+#collaboration:hover {
+  background-color: #9b50e2;
 }
 
 .h2 {
@@ -562,6 +567,10 @@ p {
     display: none;
   }
 
+  .menu-item:hover {
+    text-decoration: underline;
+  }
+
   .headline {
     width: 484px;
     font-weight: 400;
@@ -603,6 +612,11 @@ p {
     font-size: 110px;
     line-height: 100%;
     margin-top: 12cm;
+    transition-duration: 4s;
+  }
+
+  .h2:hover {
+    rotate: 90deg;
   }
 
   .grid-container {
@@ -645,6 +659,11 @@ p {
     font-weight: 400;
     font-size: 20px;
     line-height: 27px;
+  }
+
+  #stpz:hover {
+    background-color: #9b50e2;
+    color:white;
   }
 
   #stp {
