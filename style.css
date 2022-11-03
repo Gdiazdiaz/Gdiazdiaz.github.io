@@ -599,6 +599,20 @@ p {
     width: 640px;
     height: 18.8cm;
     margin-left: 18.4cm;
+    animation-name: slidein;
+    animation-duration: 4s;
+  }
+
+  @keyframes slidein {
+    from {
+      width: 0%;
+
+    }
+
+    to {
+      width: 640px;
+    }
+    
   }
 
   #dots {
@@ -869,6 +883,19 @@ p {
     position: absolute;
     top: 21cm;
     left: 18.3cm;
+    animation-duration: 3s;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes rotate {
+    from {
+      rotate:0deg;
+    }
+
+    to {
+      rotate: 360deg;
+    }
   }
 
   #mini-grid-container {
