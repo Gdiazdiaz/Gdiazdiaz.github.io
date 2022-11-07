@@ -542,6 +542,11 @@ p {
   display: none;
 }
 
+.menu-item {
+  text-decoration: none;
+  color: #1a2236;
+}
+
 @media (min-width: 768px) {
   #header-img1 {
     display: none;
