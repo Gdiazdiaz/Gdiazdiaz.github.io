@@ -11,10 +11,6 @@
 - Figma
 - VS Studio
 
-## Live Demo
-
-https://gdiazdiaz.github.io/
-
 ## Authors
 
 👤 **Glenda Diaz**
