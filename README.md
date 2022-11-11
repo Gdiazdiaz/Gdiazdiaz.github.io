@@ -15,6 +15,10 @@
 
 https://gdiazdiaz.github.io/
 
+## Loom walkthrough
+
+https://www.loom.com/share/e4c9514129f4404fa3f3f79a6cdd655e
+
 ## Authors
 
 👤 **Glenda Diaz**
