@@ -5,6 +5,7 @@
 
 ul {
   margin: 0;
+  padding-left: 0;
 }
 
 .nav-bar {
@@ -30,11 +31,10 @@ ul {
   width: 100%;
   text-align: center;
   background-color: #fff;
-  display: none;
   height: 100vh;
 }
 
-.menu-items{
+.menu-items {
   margin-top: 100px;
   z-index: 100;
 }
@@ -47,6 +47,7 @@ ul {
   line-height: 300%;
   z-index: 1000;
 }
+
 #menu-button {
   margin: 5px;
   display: block;
@@ -54,7 +55,7 @@ ul {
   margin-top: 30px;
 }
 
-.menu-button-container{
+.menu-button-container {
   border: none;
   background-color: transparent;
 }
@@ -73,6 +74,7 @@ ul {
   height: 150px;
   z-index: 0;
 }
+
 .cancel-button {
   display: block;
   width: 20px;
@@ -165,10 +167,6 @@ ul {
   line-height: 80%;
   color: #fff;
   margin-left: 20px;
-}
-
-ul {
-  padding-left: 0;
 }
 
 .card-tags {
@@ -488,6 +486,7 @@ ul {
   .menu-button-container {
     display: none;
   }
+
   .menu-item {
     padding-left: 15px;
   }
@@ -499,11 +498,10 @@ ul {
   .menu-img-bottom {
     display: none;
   }
-  
+
   .cancel-button {
     display: none;
   }
-
 
   #menu-button {
     display: none;
@@ -651,7 +649,6 @@ ul {
   }
 
   .contact-container {
-    align-content: center;
     text-align: center;
     width: 100vh;
     align-content: center;

@@ -4,7 +4,7 @@ const closingButton = document.querySelector('.cancel-button');
 const itemshow = document.querySelectorAll('.menu-item');
 
 function menuToggler() {
-  navbar.style.display = 'block';
+  navbar.style.display = 'flex';
   menuButton.style.display = 'none';
 }
 
