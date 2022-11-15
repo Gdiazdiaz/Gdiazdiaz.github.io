@@ -2,9 +2,6 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body {
-  margin: 0;
-}
 
 ul {
   margin: 0;
@@ -48,12 +45,13 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 300%;
+  z-index: 1000;
 }
 #menu-button {
   margin: 5px;
   display: block;
   margin-right: 30px;
-  margin-top: 30px;s
+  margin-top: 30px;
 }
 
 .menu-button-container{
@@ -73,7 +71,7 @@ ul {
   bottom: 0;
   left: 0;
   height: 150px;
-  z-index: 10;
+  z-index: 0;
 }
 .cancel-button {
   display: block;
@@ -655,8 +653,8 @@ ul {
   .contact-container {
     align-content: center;
     text-align: center;
-    margin-left: 420px;
-    margin-right: 420px;
+    width: 100vh;
+    align-content: center;
   }
 
   .contact-tittle {
