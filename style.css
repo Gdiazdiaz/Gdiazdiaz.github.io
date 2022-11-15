@@ -1,9 +1,8 @@
-
 * {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body{
+body {
   margin: 0;
 }
 
@@ -34,17 +33,27 @@ ul {
   width: 100%;
   text-align: center;
   background-color: #fff;
-  color: #1a2236;
-  font-weight: 400;
-font-size: 16px;
-line-height: 300%;
+  display: none;
+ 
   height: 100vh;
 }
 
+.menu-items{
+  margin-top: 100px;
+}
 
+.menu-item a {
+  text-decoration: none;
+  color: #1a2236;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 300%;
+}
 #menu-button {
   margin: 5px;
-  display: none;
+  display: block;
+  margin-right: 30px;
+  margin-top: 30px;
 }
 
 .menu-img-top {
@@ -460,7 +469,7 @@ ul {
   #menu-display {
     display: flex;
     flex-direction: row;
-  justify-content: center;
+    justify-content: center;
   }
 
   #menu-button {
