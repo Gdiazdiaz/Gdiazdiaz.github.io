@@ -64,6 +64,14 @@ color: #1A2236;
   font-weight: 500;
 font-size: 16px;
 line-height: 24px;
+cursor: pointer;
+}
+
+.header-button:hover {
+  background-color: #fff;
+  color: #1A2236;
+  border-style: solid;
+  border-color: #1A2236;
 }
 
 .grid-container {
@@ -134,6 +142,11 @@ text-align: center;
   padding-bottom: 4px;
   display: flex;
   margin-bottom: 20px;
+  cursor: pointer;
+}
+.card-button:hover {
+  background-color: #fff;
+  color: #1A2236;
 }
 
 .button-arrow {
@@ -178,6 +191,13 @@ line-height: 24px;
 padding-top: 0px;
 padding-bottom: 0px;
 margin-right: 10px;
+cursor: pointer;
+}
+.about-button:hover {
+  background-color: #fff;
+  color: #1A2236;
+  border-style: solid;
+  border-color: #1A2236;
 }
 
 .button-download {
@@ -309,6 +329,14 @@ line-height: 24px;
 padding-top: 10px;
 padding-bottom: 10px;
 margin-top: 10px;
+cursor: pointer;
+}
+
+.contact-form-submit:hover {
+  background-color: #fff;
+  color: #1A2236;
+  border-style: solid;
+  border-color: #1A2236;
 }
 
 .social-container {
@@ -328,6 +356,7 @@ margin-top: 10px;
   font-weight: 500;
 font-size: 16px;
 line-height: 24px;
+cursor: pointer;
 }
 
 .social-arrow {
@@ -340,6 +369,12 @@ line-height: 24px;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
+}
+.icon {
+  cursor: pointer;
+}
+.icon:hover {
+  opacity: 0.4;
 }
 
 .img-desktop {
