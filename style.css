@@ -39,6 +39,7 @@ ul {
 
 .menu-items{
   margin-top: 100px;
+  z-index: 100;
 }
 
 .menu-item a {
@@ -52,7 +53,7 @@ ul {
   margin: 5px;
   display: block;
   margin-right: 30px;
-  margin-top: 30px;
+  margin-top: 30px;s
 }
 
 .menu-button-container{
@@ -72,6 +73,7 @@ ul {
   bottom: 0;
   left: 0;
   height: 150px;
+  z-index: 10;
 }
 .cancel-button {
   display: block;
@@ -472,9 +474,36 @@ ul {
   }
 
   #menu-display {
+    display: block;
+    height: fit-content;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .menu-items {
     display: flex;
-    flex-direction: row;
+    margin-top: 10px;
     justify-content: center;
+    list-style: none;
+  }
+
+  .menu-button-container {
+    display: none;
+  }
+  .menu-item {
+    padding-left: 15px;
+  }
+
+  .menu-img-top {
+    display: none;
+  }
+
+  .menu-img-bottom {
+    display: none;
+  }
+  
+  .cancel-button {
+    display: none;
   }
 
 
