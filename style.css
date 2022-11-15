@@ -3,24 +3,88 @@
   font-family: 'Poppins', sans-serif;
 }
 
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+}
+
 .flex-container {
   display: flex;
+  flex-direction: row;
   justify-content: end;
+  width: 100%;
+  position: relative;
 }
 
 #menu-display {
   list-style: none;
   display: none;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  height: 100vh;
 }
 
-.menu-item {
-  margin: 10px;
+.menu-items {
+  margin-top: 100px;
+  z-index: 100;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #1a2236;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 300%;
+  z-index: 1000;
 }
 
 #menu-button {
   margin: 5px;
+  display: block;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.menu-button-container {
+  border: none;
+  background-color: transparent;
+}
+
+.menu-img-top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 114px;
+}
+
+.menu-img-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 150px;
+  z-index: 0;
+}
+
+.cancel-button {
+  display: block;
+  width: 20px;
+  height: 20px;
+  align-self: flex-end;
+  margin: 40px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
 }
 
 #header {
@@ -103,10 +167,6 @@
   line-height: 80%;
   color: #fff;
   margin-left: 20px;
-}
-
-ul {
-  padding-left: 0;
 }
 
 .card-tags {
@@ -410,7 +470,37 @@ ul {
   }
 
   #menu-display {
+    display: block;
+    height: fit-content;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .menu-items {
     display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    list-style: none;
+  }
+
+  .menu-button-container {
+    display: none;
+  }
+
+  .menu-item {
+    padding-left: 15px;
+  }
+
+  .menu-img-top {
+    display: none;
+  }
+
+  .menu-img-bottom {
+    display: none;
+  }
+
+  .cancel-button {
+    display: none;
   }
 
   #menu-button {
@@ -559,10 +649,9 @@ ul {
   }
 
   .contact-container {
-    align-content: center;
     text-align: center;
-    margin-left: 420px;
-    margin-right: 420px;
+    width: 100vh;
+    align-content: center;
   }
 
   .contact-tittle {
