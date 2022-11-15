@@ -34,7 +34,6 @@ ul {
   text-align: center;
   background-color: #fff;
   display: none;
- 
   height: 100vh;
 }
 
@@ -54,6 +53,11 @@ ul {
   display: block;
   margin-right: 30px;
   margin-top: 30px;
+}
+
+.menu-button-container{
+  border: none;
+  background-color: transparent;
 }
 
 .menu-img-top {
@@ -78,6 +82,7 @@ ul {
   margin-top: 20px;
   background-color: transparent;
   border: none;
+  margin-left: auto;
 }
 
 #header {
@@ -471,6 +476,7 @@ ul {
     flex-direction: row;
     justify-content: center;
   }
+
 
   #menu-button {
     display: none;
