@@ -9,7 +9,7 @@ ul {
 }
 
 .nav-bar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -509,8 +509,7 @@ ul {
 
   .img-desktop {
     display: block;
-    width: 100%;
-    width: max-content;
+    max-width: 702px;
     height: 877px;
   }
 
@@ -612,12 +611,11 @@ ul {
     display: block;
     height: 124.04px;
   }
-
+ 
   .about-section-container {
     display: flex;
     flex-direction: row-reverse;
-    margin-left: 160px;
-    margin-top: 216px;
+    justify-content: center;
   }
 
   .block-grid-container {
@@ -626,8 +624,7 @@ ul {
   }
 
   .about-container {
-    margin-left: 96px;
-    margin-right: 160px;
+    width: 25%;
   }
 
   .about-header {
@@ -648,29 +645,24 @@ ul {
     margin-top: 0;
   }
 
-  .contact-container {
-    text-align: center;
-    width: 100vh;
-    align-content: center;
-  }
-
   .contact-tittle {
     font-weight: 400;
     font-size: 110px;
     line-height: 100%;
+    max-width: 548px;
+    align-self: center;
   }
 
   .contact-text {
     margin-bottom: 30px;
-  }
-
-  .contact-form-submit {
-    width: fit-content;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 548px;
     align-self: center;
   }
 
+  form {
+    min-width: 548px;
+    align-self: center;
+  }
   .social-container {
     display: flex;
     flex-direction: row;
