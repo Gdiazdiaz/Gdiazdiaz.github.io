@@ -112,7 +112,7 @@ projectList.forEach((project) => {
   `;
 });
 
-recentWorkCardsContainer.innerHTML = cardsgenerator;
+// recentWorkCardsContainer.innerHTML = cardsgenerator;
 
 function popupW(id) {
   const popupgenerator = `
