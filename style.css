@@ -787,11 +787,15 @@ line-height: 80%;
   max-width: 280px;
   margin-left: 10px;
 }
-
+.btn-container {
+  display: flex;
+  flex-direction: column;
+}
 .popup-btn {
   background-color: #fff;
   align-self: center;
-  max-width: 246px;
+  max-width: 250px;
+  min-width: 246px;
   padding: 12px 30px;
   margin-bottom: 29px;
   font-weight: 500;
@@ -803,4 +807,51 @@ line-height: 27px;
 }
 .ss-img {
   margin-left: 36px;
+}
+
+@media (min-width: 768px) {
+  .popup-window {
+    padding-top: 60px;
+    padding: 61px;
+    border-style: solid;
+    border-width: 30px;
+    border-color: #1a2236;
+  }
+  .close-btn {
+    align-self: flex-end;
+    position: absolute;
+  }
+  .popup-title {
+    font-weight: 700;
+    margin-top: 0px;
+font-size: 60px;
+line-height: 80%;
+margin-bottom: 34px;
+  }
+
+  .popup-tags {
+    margin-bottom: 34px;
+  }
+  .popup-tag {
+    font-weight: 300;
+font-size: 20px;
+line-height: 80%;
+  }
+  .popup-img{
+    max-width: 90vw;
+  }
+  .popup-text {
+    align-self: center;
+    max-width: 700px;
+    font-weight: 400;
+    margin-top: 70px;
+font-size: 18px;
+line-height: 27px;
+  }
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 30px;
+  }
 }
