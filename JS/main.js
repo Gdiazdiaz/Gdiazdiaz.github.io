@@ -2,16 +2,15 @@ const menuButton = document.querySelector('.menu-button-container');
 const navbar = document.querySelector('#menu-display');
 const closingButton = document.querySelector('.cancel-button');
 const itemshow = document.querySelectorAll('.menu-item');
-const navb = document.querySelector('.nav-bar')
-const popupw = document.querySelector('.popup-window')
-const closeb = document.querySelector('.close-btn')
-const projectBtn = document.querySelectorAll('.card-button')
+const navb = document.querySelector('.nav-bar');
+const popupw = document.querySelector('.popup-window');
+const closeb = document.querySelector('.close-btn');
+const projectBtn = document.querySelectorAll('.card-button');
 
 function menuToggler() {
   navbar.style.display = 'flex';
   menuButton.style.display = 'none';
   navb.style.position = 'fixed';
-
 }
 
 function menuClosing() {
@@ -24,7 +23,7 @@ function closepopup() {
   popupw.style.display = 'none';
 }
 
-function openPopup () {
+function openPopup() {
   popupw.style.display = 'flex';
 }
 
@@ -83,14 +82,10 @@ const projectList = [
     live: 'https://gdiazdiaz.github.io/',
     source: 'https://github.com/Gdiazdiaz/Gdiazdiaz.github.io',
   },
-]
-
-console.log(projectList)
-
+];
 
 menuButton.addEventListener('click', menuToggler);
 closingButton.addEventListener('click', menuClosing);
 itemshow.forEach((element) => element.addEventListener('click', menuClosing));
-closeb.addEventListener('click',closepopup);
+closeb.addEventListener('click', closepopup);
 projectBtn.forEach((element) => element.addEventListener('click', openPopup));
-
