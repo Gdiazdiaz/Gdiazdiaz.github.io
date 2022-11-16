@@ -3,9 +3,10 @@ const navbar = document.querySelector('#menu-display');
 const closingButton = document.querySelector('.cancel-button');
 const itemshow = document.querySelectorAll('.menu-item');
 const navb = document.querySelector('.nav-bar');
-const popupw = document.querySelector('.popup-window');
+const popupw = document.querySelector('#popup');
 const closeb = document.querySelector('.close-btn');
 const projectBtn = document.querySelectorAll('.card-button');
+const recentWorkCardsContainer = document.querySelector('.grid-container')
 
 function menuToggler() {
   navbar.style.display = 'flex';
@@ -84,8 +85,63 @@ const projectList = [
   },
 ];
 
+let cardsgenerator = '';
+
+projectList.forEach((project) => {
+  cardsgenerator += `
+  <!-- recent work card ${project.id} -->
+  <div class="container-1">
+  ${project.id === 0? "<h1 class='section-tittle'>porject</h1>": ''}
+                
+                <div class="card-container">
+                    <img class="card-img-1 img" src="${project.imgUrl}">
+                    <div class="card-content">
+                        <h2 class="card-tittle">${project.title}</h2>
+                        <div>
+                            <ul class="card-tags">
+                            ${project.tags.map((tag) => `<li class="tag">${tag}</li>`).join(' ')}
+                            </ul>
+                        </div>
+                        <button type="button" class="card-button">
+                            <p>See this project</p>
+                            <img class="button-arrow" src="media/arrow.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+  `;
+});
+
+recentWorkCardsContainer.innerHTML = cardsgenerator;
+
+function popupW(id) {
+  const popupgenerator = `
+  <div class="popup-window">
+            <button type="button" class="close-btn btn">
+            <img src="media/Cancel.png">
+            </button>
+            <h2 class="popup-title">${projectList[id].title}</h2>
+            <div>
+                <ul class="popup-tags">
+                ${projectList[id].tags.map((tag) => `<li class="popup-tag">${tag}</li>`).join(' ')}
+                </ul>
+            </div>
+            <img class="popup-img" src="${projectList[id].imgUrl}">
+            <p class="popup-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, alias aperiam? Blanditiis, at? Laudantium ratione quidem ea ut sequi nesciunt, ad suscipit, doloremque aliquid, necessitatibus veritatis laborum? Voluptates, reprehenderit excepturi?</p>
+            <div class="btn-container">
+            <button type="button" class="popup-btn">See live<img class="sl-img" src="media/sl-bt.png"></button>
+            <button type="button" class="popup-btn">see source<img class="ss-img" src="media/ic_github_white.png"></button>
+            </div>
+        </div>
+`;
+
+  popupw.innerHTML = popupgenerator;
+
+  popupw.style.display = 'flex';
+}
+
+
 menuButton.addEventListener('click', menuToggler);
 closingButton.addEventListener('click', menuClosing);
 itemshow.forEach((element) => element.addEventListener('click', menuClosing));
-closeb.addEventListener('click', closepopup);
 projectBtn.forEach((element) => element.addEventListener('click', openPopup));
