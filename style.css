@@ -714,16 +714,23 @@ line-height: 24px;
     gap: 30px;
   }
 }
+
+.close-btn {
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+  margin: 10px;
+}
 .popup-window {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
   height: 100vh;
   width: 100vw;
-  position: fixe;
+  position: fixed;
   top:0;
   left:0;
   overflow-y: scroll;
+  background-color: #fff;
 }
 .popup-title {
   font-weight: 700;
