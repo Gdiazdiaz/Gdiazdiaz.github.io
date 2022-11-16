@@ -650,6 +650,11 @@ line-height: 24px;
     justify-content: center;
   }
 
+  .about-img {
+    display: block;
+    align-self: flex-end;
+    margin-left: 60px;
+  }
   .block-grid-container {
     display: grid;
     grid-template-columns: auto auto;
@@ -658,6 +663,7 @@ line-height: 24px;
   .about-container {
     margin-left: 96px;
     margin-right: 160px;
+    max-width: 25%;
   }
 
   .about-header {
@@ -680,10 +686,25 @@ line-height: 24px;
 
   .contact-container {
     text-align: center;
-    width: 100vh;
     align-content: center;
   }
 
+  .img-contact-container {
+    margin-top: 160px;
+    display: flex;
+  }
+  .contact-img1 {
+    display: none;
+  }
+
+  .contact-img2 {
+    display: block;
+    align-self: flex-start;
+  }
+  .contact-img3 {
+    display: block;
+    align-self: flex-end;
+  }
   .contact-tittle {
     font-weight: 400;
     font-size: 110px;
@@ -714,23 +735,16 @@ line-height: 24px;
     gap: 30px;
   }
 }
-
-.close-btn {
-  align-self: flex-end;
-  background-color: transparent;
-  border: none;
-  margin: 10px;
-}
 .popup-window {
-  display: flex;
+  display: none;
   flex-direction: column;
+  background-color: #fff;
   height: 100vh;
   width: 100vw;
   position: fixed;
   top:0;
   left:0;
   overflow-y: scroll;
-  background-color: #fff;
 }
 .popup-title {
   font-weight: 700;
