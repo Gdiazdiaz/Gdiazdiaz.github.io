@@ -3,10 +3,10 @@ const navbar = document.querySelector('#menu-display');
 const closingButton = document.querySelector('.cancel-button');
 const itemshow = document.querySelectorAll('.menu-item');
 const navb = document.querySelector('.nav-bar');
-const popupw = document.querySelector('#popup');
+const popupw = document.querySelector('.popup-window');
 const closeb = document.querySelector('.close-btn');
 const projectBtn = document.querySelectorAll('.card-button');
-const recentWorkCardsContainer = document.querySelector('.grid-container')
+const recentWorkCardsContainer = document.querySelector('.portfolio-card-container');
 
 function menuToggler() {
   navbar.style.display = 'flex';
@@ -89,35 +89,28 @@ let cardsgenerator = '';
 
 projectList.forEach((project) => {
   cardsgenerator += `
-  <!-- recent work card ${project.id} -->
-  <div class="container-1">
-  ${project.id === 0? "<h1 class='section-tittle'>porject</h1>": ''}
-                
-                <div class="card-container">
-                    <img class="card-img-1 img" src="${project.imgUrl}">
-                    <div class="card-content">
-                        <h2 class="card-tittle">${project.title}</h2>
-                        <div>
-                            <ul class="card-tags">
-                            ${project.tags.map((tag) => `<li class="tag">${tag}</li>`).join(' ')}
-                            </ul>
-                        </div>
-                        <button type="button" class="card-button">
-                            <p>See this project</p>
-                            <img class="button-arrow" src="media/arrow.png">
-                        </button>
-                    </div>
-                </div>
+  <!-- recent work card ${project.id+1} -->
+  <div class="portfolio-${project.id+2} card-container">
+            <img src="${project.imgUrl}" alt="img" class="portfolio-img" />
+            <div class="card-content">
+                <h2 class="card-tittle">${project.title}</h2>
+                <ul class="card-tags">
+                ${project.tags.map((tag) => `<li class="tag">${tag}</li>`).join(' ')}
+                </ul>
+                <button type="button" onClick="popupW(${project.id})" class="card-button">
+                <p>See this project</p>
+                <img class="button-arrow" src="media/arrow.png" />
+                </button>
             </div>
+        </div>
   `;
 });
 
-// recentWorkCardsContainer.innerHTML = cardsgenerator;
+recentWorkCardsContainer.innerHTML += cardsgenerator;
 
 function popupW(id) {
   const popupgenerator = `
-  <div class="popup-window">
-            <button type="button" class="close-btn btn">
+            <button type="button" class="close-btn btn" onClick="closepopup()">
             <img src="media/Cancel.png">
             </button>
             <h2 class="popup-title">${projectList[id].title}</h2>
@@ -132,11 +125,8 @@ function popupW(id) {
             <button type="button" class="popup-btn">See live<img class="sl-img" src="media/sl-bt.png"></button>
             <button type="button" class="popup-btn">see source<img class="ss-img" src="media/ic_github_white.png"></button>
             </div>
-        </div>
 `;
-
   popupw.innerHTML = popupgenerator;
-
   popupw.style.display = 'flex';
 }
 
