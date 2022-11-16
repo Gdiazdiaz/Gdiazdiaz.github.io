@@ -5,6 +5,7 @@ const itemshow = document.querySelectorAll('.menu-item');
 const navb = document.querySelector('.nav-bar')
 const popupw = document.querySelector('.popup-window')
 const closeb = document.querySelector('.close-btn')
+const projectBtn = document.querySelectorAll('.card-button')
 
 function menuToggler() {
   navbar.style.display = 'flex';
@@ -23,7 +24,13 @@ function closepopup() {
   popupw.style.display = 'none';
 }
 
+function openPopup () {
+  popupw.style.display = 'flex';
+}
+
 menuButton.addEventListener('click', menuToggler);
 closingButton.addEventListener('click', menuClosing);
 itemshow.forEach((element) => element.addEventListener('click', menuClosing));
 closeb.addEventListener('click',closepopup);
+projectBtn.forEach((element) => element.addEventListener('click', openPopup));
+
