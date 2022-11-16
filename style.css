@@ -735,16 +735,22 @@ line-height: 24px;
     gap: 30px;
   }
 }
+.close-btn {
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+  margin: 10px;
+}
 .popup-window {
-  display: none;
+  display: flex;
   flex-direction: column;
-  background-color: #fff;
   height: 100vh;
   width: 100vw;
   position: fixed;
   top:0;
   left:0;
   overflow-y: scroll;
+  background-color: #fff;
 }
 .popup-title {
   font-weight: 700;
@@ -779,7 +785,7 @@ line-height: 80%;
 
 .popup-text {
   max-width: 280px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .popup-btn {
