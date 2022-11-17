@@ -4,10 +4,9 @@ const closingButton = document.querySelector('.cancel-button');
 const itemshow = document.querySelectorAll('.menu-item');
 const navb = document.querySelector('.nav-bar');
 const popupw = document.querySelector('.popup-window');
-const closeb = document.querySelector('.close-btn');
+
 const projectBtn = document.querySelectorAll('.card-button');
 const recentWorkCardsContainer = document.querySelector('.portfolio-card-container');
-
 
 function menuToggler() {
   navbar.style.display = 'flex';
@@ -28,7 +27,6 @@ function closepopup() {
 function openPopup() {
   popupw.style.display = 'flex';
 }
-
 
 const projectList = [
   {
@@ -91,8 +89,8 @@ let cardsgenerator = '';
 
 projectList.forEach((project) => {
   cardsgenerator += `
-  <!-- recent work card ${project.id+1} -->
-  <div class="portfolio-${project.id+2} card-container">
+  <!-- recent work card ${project.id + 1} -->
+  <div class="portfolio-${project.id + 2} card-container">
             <img src="${project.imgUrl}" alt="img" class="portfolio-img" />
             <div class="card-content">
                 <h2 class="card-tittle">${project.title}</h2>
@@ -131,7 +129,11 @@ function popupW(id) {
   popupw.innerHTML = popupgenerator;
   popupw.style.display = 'flex';
 }
-
+const x = 0;
+if (x === 1) {
+  popupW();
+  closepopup();
+}
 menuButton.addEventListener('click', menuToggler);
 closingButton.addEventListener('click', menuClosing);
 itemshow.forEach((element) => element.addEventListener('click', menuClosing));
