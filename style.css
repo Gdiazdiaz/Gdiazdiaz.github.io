@@ -154,7 +154,7 @@ ul {
   display: grid;
 }
 
-.section-tittle {
+.portfolio-title {
   font-family: 'Playfair Display', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -288,7 +288,7 @@ ul {
   margin-top: 50px;
   padding-bottom: 30px;
   align-content: center;
-  width: 289px;
+  max-width: 270px;
   height: 289px;
   margin-left: 10px;
   margin-right: 10px;
@@ -296,17 +296,19 @@ ul {
 
 .interior-container {
   display: flex;
+  justify-content: center;
+  height: 189px;
 }
 
 .about-block-F {
-  background-color: #e2505c;
+  background-color: #E2505C;
   color: #fff;
   padding-left: 60px;
   padding-top: 30px;
   margin-top: 50px;
   padding-bottom: 30px;
   align-content: center;
-  width: 289px;
+  max-width: 270px;
   height: 289px;
   margin-left: 10px;
   margin-right: 10px;
@@ -319,7 +321,7 @@ ul {
   padding-top: 30px;
   margin-top: 50px;
   padding-bottom: 30px;
-  width: 289px;
+  max-width: 270px;
   height: 289px;
   margin-left: 10px;
   margin-right: 10px;
@@ -352,8 +354,6 @@ ul {
 
 .block-img {
   align-self: flex-end;
-  padding-top: 87px;
-  padding-left: 20px;
 }
 
 .contact-container {
@@ -574,8 +574,35 @@ ul {
     background-color: #fff;
   }
 
+  .card-tittle {
+    font-weight: 700;
+    margin-top: 20px;
+font-size: 40px;
+line-height: 80%;
+  }
+
+  .card-tags {
+    justify-content: flex-start;
+    gap:20px;
+    margin-bottom: 25px;
+  }
+  .tag {
+    font-weight: 300;
+font-size: 20px;
+line-height: 80%;
+  }
+  .card-button {
+    max-width: 212px;
+  }
+
+  .button-arrow {
+    max-width: 24px;
+    max-height: 24px;
+  }
+
   .card-content {
-     
+     background-color: #1a2236;
+
   }
 
   .section-tittle {
@@ -919,6 +946,7 @@ ul {
   font-weight: 400;
   font-size: 110px;
   line-height: 100%;
+  color: #1a2236;
   
   }
   .portfolio-2 {
