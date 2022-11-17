@@ -4,7 +4,7 @@
 }
 
 body {
-  margin: 0px;
+  margin: 0;
 }
 
 ul {
@@ -818,7 +818,7 @@ ul {
   font-size: 20px;
   line-height: 80%;
   margin-right: 10px;
-  margin-top: 0px;
+  margin-top: 0;
   color: #1a2236;
 }
 
