@@ -168,22 +168,3 @@ form.addEventListener('submit', (event) => {
     document.querySelector('.contact-form-error').innerHTML += '<small>Email should be in lowercase</small>';
   }
 });
-
-const formObject = {
-  name: '',
-  email: '',
-  content: '',
-};
-form.name.addEventListener('change', () => {
-  formObject[form.name.name] = form.name.value;
-  localStorage.setItem('formData', JSON.stringify(formObject));
-});
-form.email.addEventListener('change', () => {
-  formObject[form.email.name] = form.email.value;
-  localStorage.setItem('formData', JSON.stringify(formObject));
-});
-
-form.content.addEventListener('change', () => {
-  formObject[form.content.name] = form.content.value;
-  localStorage.setItem('formData', JSON.stringify(formObject));
-});
