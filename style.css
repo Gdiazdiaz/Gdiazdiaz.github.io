@@ -412,6 +412,10 @@ ul {
   margin-bottom: 10px;
 }
 
+.contact-form-error {
+  color: #ff0000;
+}
+
 .contact-form-submit {
   background-color: #1a2236;
   border: none;
