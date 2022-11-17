@@ -4,7 +4,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0px;
 }
 
 ul {
@@ -795,9 +795,14 @@ ul {
   margin: 10px;
 }
 
+#popup {
+  align-items: center;
+}
+
 .popup-window {
   display: none;
   flex-direction: column;
+  align-items: center;
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -812,8 +817,8 @@ ul {
   font-weight: 700;
   font-size: 20px;
   line-height: 80%;
-  margin-left: 10px;
   margin-right: 10px;
+  margin-top: 0px;
   color: #1a2236;
 }
 
@@ -822,7 +827,6 @@ ul {
   gap: 10px;
   list-style: none;
   margin-bottom: 18px;
-  margin-left: 10px;
   margin-right: 10px;
 }
 
