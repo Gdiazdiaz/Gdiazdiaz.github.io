@@ -7,7 +7,7 @@ const popupw = document.querySelector('.popup-window');
 
 const projectBtn = document.querySelectorAll('.card-button');
 const recentWorkCardsContainer = document.querySelector(
-  '.portfolio-card-container',
+  '.portfolio-card-container'
 );
 
 function menuToggler() {
@@ -98,12 +98,12 @@ projectList.forEach((project) => {
                 <h2 class="card-tittle">${project.title}</h2>
                 <ul class="card-tags">
                 ${project.tags
-    .map((tag) => `<li class="tag">${tag}</li>`)
-    .join(' ')}
+                  .map((tag) => `<li class="tag">${tag}</li>`)
+                  .join(' ')}
                 </ul>
                 <button type="button" onClick="popupW(${
-  project.id
-})" class="card-button">
+                  project.id
+                })" class="card-button">
                 <p>See this project</p>
                 <img class="button-arrow" src="media/arrow.png" />
                 </button>
@@ -123,8 +123,8 @@ function popupW(id) {
             <div>
                 <ul class="popup-tags">
                 ${projectList[id].tags
-    .map((tag) => `<li class="popup-tag">${tag}</li>`)
-    .join(' ')}
+                  .map((tag) => `<li class="popup-tag">${tag}</li>`)
+                  .join(' ')}
                 </ul>
             </div>
             <img class="popup-img" src="${projectList[id].imgUrl}">
@@ -154,7 +154,8 @@ const form = document.querySelector('#contact-form');
 
 function validateEmail(input) {
   // validate email format
-  const emailRegex = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+  const emailRegex =
+    /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
   const email = input.value.trim();
   return emailRegex.test(email);
 }
@@ -165,7 +166,8 @@ form.addEventListener('submit', (event) => {
   if (emailValid) {
     form.submit();
   } else {
-    document.querySelector('.contact-form-error').innerHTML += '<small>Email should be in lowercase</small>';
+    document.querySelector('.contact-form-error').innerHTML +=
+      '<small>Email should be in lowercase</small>';
   }
 });
 
@@ -187,3 +189,19 @@ form.content.addEventListener('change', () => {
   formObject[form.content.name] = form.content.value;
   localStorage.setItem('formData', JSON.stringify(formObject));
 });
+
+if (JSON.parse(localStorage.getItem('formData')) === null) {
+  formObject.name = '';
+  formObject.email = '';
+  formObject.content = '';
+  console.log('first');
+} else {
+  const data = JSON.parse(localStorage.getItem('formData'));
+  formObject.name = data.name;
+  formObject.email = data.email;
+  formObject.content = data.content;
+}
+
+form.name.value = formObject.name;
+form.email.value = formObject.email;
+form.content.value = formObject.content;
