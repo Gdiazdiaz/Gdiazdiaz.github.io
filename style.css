@@ -571,7 +571,9 @@ ul {
   }
 
   .card-container {
-    background-color: #fff;
+    background-color: #1a2236;
+    display: flex;
+    flex-direction:column-reverse;
   }
 
   .card-tittle {
@@ -602,7 +604,11 @@ line-height: 80%;
 
   .card-content {
      background-color: #1a2236;
+     z-index: -1;
+  }
 
+  .card-container:hover .card-content {
+    z-index: 1;
   }
 
   .section-tittle {
@@ -795,6 +801,7 @@ line-height: 80%;
   left: 0;
   overflow-y: scroll;
   background-color: #fff;
+  z-index: 10;
 }
 
 .popup-title {
@@ -803,6 +810,7 @@ line-height: 80%;
   line-height: 80%;
   margin-left: 10px;
   margin-right: 10px;
+  color: #1a2236;
 }
 
 .popup-tags {
@@ -822,6 +830,7 @@ line-height: 80%;
   font-weight: 300;
   font-size: 10.3334px;
   line-height: 80%;
+  color: #1a2236;
 }
 
 .popup-img {
@@ -833,6 +842,7 @@ line-height: 80%;
 .popup-text {
   max-width: 280px;
   margin-left: 10px;
+  color: #1a2236;
 }
 
 .btn-container {
@@ -938,6 +948,10 @@ line-height: 80%;
     width: 100%;
     height: 100%;
   }
+
+  .portfolio-img {
+    display: none;
+  }
   
   .portfolio-title {
   transform: rotate(-90deg);
@@ -953,8 +967,12 @@ line-height: 80%;
     grid-column: 4 / 12;
     grid-row: 1/4;
     height: 100%;
+    background-image: url("media/Rectangle\ 1.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    
   }
-  
+
   .portfolio-2 img {
     height: 100%;
     width: 100%;
@@ -964,6 +982,9 @@ line-height: 80%;
   .portfolio-3 {
     grid-column: 1 / 4;
     grid-row: 5/7;
+    background-image: url("media/Rectangle\ 2.png");
+    background-repeat: no-repeat;
+    background-size:cover;
   }
   
   .portfolio-3 img {
@@ -985,6 +1006,9 @@ line-height: 80%;
   .portfolio-4 {
     grid-column: 1 / 6;
     grid-row: 7/9;
+    background-image: url("media/Rectangle\ 3.png");
+    background-repeat: no-repeat;
+    background-size:cover;
   }
   .portfolio-4 img {
     height: 100%;
@@ -994,6 +1018,9 @@ line-height: 80%;
   .portfolio-5 {
     grid-column: 6 / 9;
     grid-row: 9/11;
+    background-image: url("media/Rectangle\ 4.png");
+    background-repeat: no-repeat;
+    background-size:cover;
   }
   .portfolio-5 img {
     height: 100%;
@@ -1031,6 +1058,9 @@ line-height: 80%;
   .portfolio-6 {
     grid-row: 6 / 8;
     grid-column: 9 / 12;
+    background-image: url("media/Rectangle\ 5.png");
+    background-repeat: no-repeat;
+    background-size:cover;
   }
   .portfolio-6 img{
     height: 100%;
@@ -1040,6 +1070,9 @@ line-height: 80%;
   .portfolio-7{
     grid-row: 4 / 6;
     grid-column: 9 / 12;
+    background-image: url("media/Rectangle\ 6.png");
+    background-repeat: no-repeat;
+    background-size:cover;
   }
   .portfolio-7 img{
     height: 100%;

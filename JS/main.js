@@ -8,6 +8,7 @@ const closeb = document.querySelector('.close-btn');
 const projectBtn = document.querySelectorAll('.card-button');
 const recentWorkCardsContainer = document.querySelector('.portfolio-card-container');
 
+
 function menuToggler() {
   navbar.style.display = 'flex';
   menuButton.style.display = 'none';
@@ -27,6 +28,7 @@ function closepopup() {
 function openPopup() {
   popupw.style.display = 'flex';
 }
+
 
 const projectList = [
   {
@@ -129,7 +131,6 @@ function popupW(id) {
   popupw.innerHTML = popupgenerator;
   popupw.style.display = 'flex';
 }
-
 
 menuButton.addEventListener('click', menuToggler);
 closingButton.addEventListener('click', menuClosing);
