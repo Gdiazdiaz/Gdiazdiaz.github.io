@@ -6,7 +6,9 @@ const navb = document.querySelector('.nav-bar');
 const popupw = document.querySelector('.popup-window');
 
 const projectBtn = document.querySelectorAll('.card-button');
-const recentWorkCardsContainer = document.querySelector('.portfolio-card-container');
+const recentWorkCardsContainer = document.querySelector(
+  '.portfolio-card-container',
+);
 
 function menuToggler() {
   navbar.style.display = 'flex';
@@ -95,9 +97,13 @@ projectList.forEach((project) => {
             <div class="card-content">
                 <h2 class="card-tittle">${project.title}</h2>
                 <ul class="card-tags">
-                ${project.tags.map((tag) => `<li class="tag">${tag}</li>`).join(' ')}
+                ${project.tags
+    .map((tag) => `<li class="tag">${tag}</li>`)
+    .join(' ')}
                 </ul>
-                <button type="button" onClick="popupW(${project.id})" class="card-button">
+                <button type="button" onClick="popupW(${
+  project.id
+})" class="card-button">
                 <p>See this project</p>
                 <img class="button-arrow" src="media/arrow.png" />
                 </button>
@@ -116,7 +122,9 @@ function popupW(id) {
             <h2 class="popup-title">${projectList[id].title}</h2>
             <div>
                 <ul class="popup-tags">
-                ${projectList[id].tags.map((tag) => `<li class="popup-tag">${tag}</li>`).join(' ')}
+                ${projectList[id].tags
+    .map((tag) => `<li class="popup-tag">${tag}</li>`)
+    .join(' ')}
                 </ul>
             </div>
             <img class="popup-img" src="${projectList[id].imgUrl}">
@@ -138,3 +146,25 @@ menuButton.addEventListener('click', menuToggler);
 closingButton.addEventListener('click', menuClosing);
 itemshow.forEach((element) => element.addEventListener('click', menuClosing));
 projectBtn.forEach((element) => element.addEventListener('click', openPopup));
+
+// ------------//
+// form-validation//
+
+const form = document.querySelector('#contact-form');
+
+function validateEmail(input) {
+  // validate email format
+  const emailRegex = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+  const email = input.value.trim();
+  return emailRegex.test(email);
+}
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const emailValid = validateEmail(form.elements.formEmail);
+  if (emailValid) {
+    form.submit();
+  } else {
+    document.querySelector('.contact-form-error').innerHTML += '<small>Email should be in lowercase</small>';
+  }
+});
