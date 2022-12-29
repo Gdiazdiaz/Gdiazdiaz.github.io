@@ -31,6 +31,7 @@ a{
 #menu-button{
     align-self: flex-end;
     opacity: 0.8;
+    margin: 8px 1px 10px 10px;
 }
 
 #nav-list{
