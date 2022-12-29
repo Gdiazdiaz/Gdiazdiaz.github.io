@@ -1,230 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link
       href="https://fonts.googleapis.com/css?family=Poppins|Playfair+Display"
       rel="stylesheet"
       type="text/css"
     />
-    <title>Portfolio Glenda Diaz</title>
-  </head>
-
-  <body>
+    <title>My Portfolio</title>
+</head>
+<body>
     <nav class="nav-bar">
-      <div class="flex-container">
-        <ul id="menu-display">
-          <img class="menu-img-top" src="media/menu-img-top.png" />
-          <button type="button" class="cancel-button">
-            <img src="media/Cancel.png" />
-          </button>
-          <ul class="menu-items">
-            <li class="menu-item"><a href="#hello">Hello</a></li>
-            <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
-            <li class="menu-item"><a href="#about">About</a></li>
-            <li class="menu-item"><a href="#contact">Contact</a></li>
-          </ul>
-          <img class="menu-img-bottom" src="media/menu-img-bottom.png" />
-        </ul>
-        <button type="button" class="menu-button-container">
-          <svg id="menu-button" viewBox="0 0 100 80" width="40" height="25">
-            <rect width="100" height="12" rx="5"></rect>
-            <rect y="30" width="100" height="12" rx="5"></rect>
-            <rect y="60" width="100" height="12" rx="5"></rect>
+        <svg id="menu-button" viewBox="0 0 100 80" width="40" height="25">
+            <rect width="100" height="15" rx="7"></rect>
+            <rect y="30" width="100" height="15" rx="7"></rect>
+            <rect y="60" width="100" height="15" rx="7"></rect>
           </svg>
-        </button>
-      </div>
+        <ul id="nav-list">
+            <img id="closing-button" src="./media/Cancel.png">
+            <li><a href="#">Hello</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>      
     </nav>
     <section id="hello">
-      <img class="header-img1" src="media/image_geometry_1.png" />
-      <div class="header-container">
-        <div id="header">
-          <h1 class="headline">Glenda Diaz</h1>
-          <p class="headline-text">
-            Hello! I am a software developer! I can help you build a product,
-            feature or website. Taka a look of my works. If you like what you
-            see and have a project you need coded, don’t hesitate and contact
-            me.
-          </p>
-          <button type="button" href="#" class="header-button">
-            Start collaboration
-          </button>
+        <div class="intro-container">
+        <img class="intro-img-mobile" src="./media/image_geometry_1.png">
+        <div class="header-container">
+        <div class="content-container">
+        <div class="intro-container">
+        <h1 id="hello-title">Glenda Diaz</h1>
+        <p id="hello-intro">Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works.
+            If you like what you see and have a project you need coded, don’t hesitate and contact me.</p>
+        <button id="intro-button">Start Collaboration</button>
         </div>
-
-        <div>
-          <img class="img-desktop 1" src="media/collage.png" />
+        <img class="intro-dots" src="./media/dots.png">
         </div>
-      </div>
-      <img class="header-img2" src="media/image_geometry_2.png" />
+        <img class="intro-img-desktop" src="./media/collage.png">
+        </div>
+        </div>
     </section>
-    <section id="portfolio">
-      <div class="portfolio-card-container">
-        <div class="portfolio-1">
-          <h1 class="portfolio-title">Projects</h1>
-        </div>
-        <div class="illustration-1 portpolio-illustration">
-          <img
-            src="./media/second-row-bg.svg"
-            alt="svg"
-            class="portfolio-illu"
-          />
-        </div>
-        <div class="illustration-3 portpolio-illustration">
-          <img src="./media/pr-img2.png" alt="svg" class="portfolio-illu" />
-        </div>
-        <div class="illustration-4 portpolio-illustration">
-          <img src="./media/pr-img4.png" alt="svg" class="portfolio-illu" />
-        </div>
-        <div class="illustration-2 portpolio-illustration">
-          <img
-            src="./media/third-row-bg.png"
-            alt="svg"
-            class="portfolio-illu"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="about-section-container">
-        <div class="about-container">
-          <h1 class="about-header">About</h1>
-          <p class="about-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Perferendis placeat reprehenderit repudiandae rerum reiciendis quia
-            culpa magni maxime. Alias provident quasi ratione beatae,
-            dignissimos velit? Facere repellendus sed quis odit.
-          </p>
-          <button type="button" href="#" class="about-button">
-            <p>Get my CV</p>
-            <img class="button-download" src="media/download.png" />
-          </button>
-        </div>
-
-        <div class="block-grid-container">
-          <div class="about-block-L">
-            <h3 class="block-tittle">Languages</h3>
-            <div class="interior-container">
-              <ul class="block-list">
-                <li class="block-item">JavaScript</li>
-                <li class="block-item">Ruby</li>
-                <li class="block-item">HTML</li>
-                <li class="block-item">CSS</li>
-              </ul>
-              <img class="block-img" src="media/hashtag.png" />
-            </div>
-          </div>
-
-          <div class="about-block-F">
-            <h3 class="block-tittle">Frameworks</h3>
-            <div class="interior-container">
-              <ul class="block-list">
-                <li class="block-item">Bootstrap</li>
-                <li class="block-item">Ruby on rails</li>
-                <li class="block-item">RSpec</li>
-                <li class="block-item">Capybara</li>
-                <li class="block-item">Selenium</li>
-              </ul>
-              <img class="block-img" src="media/square.png" />
-            </div>
-          </div>
-
-          <div class="about-block-S">
-            <h3 class="block-tittle">Skills</h3>
-            <div class="interior-container">
-              <ul class="block-list">
-                <li class="block-item">Codekit</li>
-                <li class="block-item">Codepen</li>
-                <li class="block-item">Github</li>
-                <li class="block-item">GitLab</li>
-                <li class="block-item">Terminal</li>
-              </ul>
-              <img class="block-img" src="media/skills.png" />
-            </div>
-          </div>
-          <img class="about-img" src="media/image_dots_with_teal.png" />
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <img class="contact-img1" src="media/image_geometry_1.png" />
-      <div class="img-contact-container">
-        <img class="contact-img2" src="media/image-geometry_6.png" />
-        <div class="contact-container">
-          <h1 class="contact-tittle">Get started</h1>
-          <p class="contact-text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Reprehenderit, natus magni cupiditate reiciendis maiores repellat
-            mollitia, doloribus laudantium quasi fugiat quo accusantium nisi ut
-            vero ipsam odio quam. Tempore, totam!
-          </p>
-          <form
-            action="https://formspree.io/f/mdojwqzo"
-            method="POST"
-            class="contact-form"
-            id="contact-form"
-          >
-            <input
-              type="text"
-              placeholder="Your name"
-              class="contact-form-name"
-              max="30"
-              name="name"
-              required
-            />
-            <input
-              id="formEmail"
-              type="email"
-              name="email"
-              placeholder="Your email"
-              class="contact-form-email"
-              required
-            />
-            <textarea
-              name="content"
-              id="content"
-              cols="30"
-              rows="10"
-              class="contact-form-content"
-              placeholder="Enter your message here..."
-              maxlength="500"
-              required
-            ></textarea>
-            <div class="contact-form-error"></div>
-            <input
-              type="submit"
-              class="contact-form-submit"
-              value="Start collaboration"
-            />
-          </form>
-        </div>
-        <img class="contact-img3" src="media/image-geometry_7.png" />
-      </div>
-
-      <div class="social-container">
-        <button type="button" href="#" class="social-button">
-          <p>Get my resume</p>
-          <img class="social-arrow" src="media/arrow2.png" />
-        </button>
-        <div class="icon-container">
-          <img class="icon" src="media/ic_github.png" />
-          <img class="icon" src="media/ic_angellist.png" />
-          <img class="icon" src="media/ic_linkedin.png" />
-          <img class="icon" src="media/ic_medium.png" />
-          <img class="icon" src="media/ic_twitter.png" />
-          <img class="icon" src="media/ic_stackoverflow.png" />
-        </div>
-      </div>
-    </section>
-
-    <section id="popup">
-      <div class="popup-window"></div>
-    </section>
-
     <script src="./JS/main.js"></script>
-  </body>
+</body>
 </html>
